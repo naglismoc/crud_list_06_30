@@ -1,7 +1,6 @@
-from list_CRUD import *
+from file_CRUD import *
 
 holidays = load_holidays()
-id_counter = 3
 while True:
     print_info()
     opt = input()
@@ -9,8 +8,7 @@ while True:
         case '1':
            print_holidays(holidays)
         case '2':
-           id_counter += 1
-           create_holiday(id_counter, holidays)
+           create_holiday(holidays)
         case '3':
            edit_holiday(holidays)
         case '4':
