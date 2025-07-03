@@ -1,7 +1,7 @@
-from file_CRUD import *
+from db_CRUD import *
 
-holidays = load_holidays()
 while True:
+    holidays = load_holidays()
     print_info()
     opt = input()
     match opt:
